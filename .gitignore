@@ -1,0 +1,8 @@
+# Dependency directories
+/node_modules
+
+# Optional: Logs and debugging
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
