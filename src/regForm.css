@@ -1,0 +1,211 @@
+
+body{
+  background-color: #66435E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  display: flex;
+  background-color: #dce2db;
+  flex-direction: row;
+  transition: 0.3s;
+  border-radius: 101px;
+  width: 1000px;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.sub_container_one{
+  display: flex;
+  flex: 1;
+  width: 500px;
+}
+
+img{
+  display: block;
+}
+
+
+.settings{
+  position: relative;
+  justify-content: start;
+  margin-left: 30px;
+  
+}
+
+.settings_btn{
+  border-style: none;
+  background-color:#dce2db ;
+  cursor: pointer;
+  
+}
+
+.settings_dropdown {
+  border-radius: 5px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  display: block;
+}
+
+
+.settings_dropdown div {
+  padding: 10px; /* Add some padding inside each dropdown item */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  flex-direction: column;
+}
+
+.settings_dropdown div:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+}
+
+.sub_container_two{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-top-left-radius: 20%;
+  border-bottom-left-radius: 20%;
+}
+
+.registration{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  color: #3f2d2d;
+}
+
+.fillup{
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.fillup input{
+  height: 30px;
+  width: 380px;
+  border-radius: 10px;
+  border-color:#dbdada; 
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid transparent;
+}
+
+/* Change border color when hovered over */
+
+  .fillup input:hover {
+    border: 1px solid #66435E; /* Add border style and color on hover */
+  }
+
+  
+
+
+
+.fillup input:focus {
+  border-color: none;
+  border-style: none;
+  background-color: #aca9a9;
+}
+
+
+  .password-message {
+    color: rgb(173, 40, 40); /* Or any color that fits your design */
+    font-size: 18px; /* Or any font size that fits your design */
+    z-index: 1; /* Set a high z-index value */
+
+}
+
+.done{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.done button{
+  font-family: "Oswald", sans-serif;
+  background-color: #66435E;
+  color: #fff;
+  width: 250px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 31px 24px 42px 0px rgba(102, 53, 80, 0.55);
+  -webkit-box-shadow: 31px 24px 42px 0px rgba(115,69,94,0.55);
+  -moz-box-shadow: 31px 24px 42px 0px rgba(115,69,94,0.55);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.done button:hover{
+  background-color: #291825;
+}
+
+.done button:disabled {
+  background-color: grey;
+}
+
+.done button:disabled:hover {
+  background-color: grey;
+}
+
+
+/* .toggle-password{
+position: absolute;
+top: 49%;
+right: 17%;
+transform: translateY(-50%);
+background: none;
+border: none;
+cursor: pointer;
+} */
+
+#popover-password {
+  position: absolute; /* or position: relative; depending on your layout */
+  top: 100%; /* adjust as needed */
+  left: 0; /* adjust as needed */
+  background-color: #fff; /* background color */
+  border: 1px solid #ccc; /* border */
+  padding: 10px; /* padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* shadow */
+  z-index: 999; /* adjust as needed */
+}
+
+#popover-password p {
+  margin: 0; /* remove default margin */
+}
+
+.progress {
+  margin-top: 10px; /* adjust spacing */
+}
+
+.progress-bar {
+  width: 0; /* initial width */
+  height: 20px; /* height */
+  background-color: #007bff; /* bar color */
+  transition: width 0.5s ease; /* smooth transition */
+}
+
+
+.password-strength {
+  text-transform: capitalize;
+}
+
+.password-strength--easy {
+  color: red
+}
+
+.password-strength--medium {
+  color: yellow;
+}
+
+.password-strength--hard {
+  color: green;
+}
